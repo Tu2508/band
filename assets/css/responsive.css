@@ -1,0 +1,21 @@
+/* mobile */
+@media (max-width :740px) {
+    #nav{
+        display: block;
+    }
+
+    #nav > li{
+        display: block;
+    }
+
+    #header .mobile-menu-btn{
+        display: block;
+    }
+
+    #header .search-but{
+        display: none;
+    }
+    
+    
+
+}

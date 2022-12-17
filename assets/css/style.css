@@ -1,0 +1,205 @@
+/* Reset css */
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+html{
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+.clear{
+  clear: both;
+}
+
+/* 1.làm từ ngoài vào trong 
+2. Từ trên xuống dưới
+3. tổng quan đến chi tiết
+
+*/
+/* 
+1.vị trí
+2. kích thước
+3.màu sắc
+4. kiểu dáng, kểu chữ...
+*/
+#header {
+  height: 46px;
+  background-color: black;
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: 1;
+}
+#nav{
+  display: inline-block
+}
+#nav .subnav{
+  list-style-type: none;
+}
+
+
+#nav > li{
+  display: inline-block;
+}
+
+#nav li{
+    position:relative;
+}
+#nav > li > a {
+  color: white;
+  text-transform: uppercase;
+}
+
+#nav li a{
+  text-decoration: none;
+  
+  line-height: 46px;
+  padding:0 24px ;
+  display: block;
+
+}
+
+#nav > li:hover > a,
+#nav .subnav li:hover a {
+  color: black;
+  background-color: #ccc;
+
+}
+#nav li:hover .subnav{
+  display: block;
+}
+
+
+
+#nav .subnav{
+  display: none;
+  top:100%;
+  left: 0;
+  min-width: 160px;
+  position: absolute;
+  background-color: white;
+  box-shadow:0 0 10px rgba(0, 0, 0, 0.3);
+}
+
+#nav .subnav a {
+  color: black;
+  padding:0 12px;
+  line-height: 38px;
+}
+
+#nav .arrown-down{
+  font-size: 14px;
+}
+#header .search-button  {
+  float: right;
+
+}
+
+.search-button .search-icon{
+  color: white;
+  font-size: 20px;
+  line-height:46px;
+  padding:0 21px;
+  display: block;
+}
+.search-button:hover .search-icon{
+  background-color: #f33446;
+  color: white;
+  cursor: pointer;
+}
+
+
+
+
+
+
+#slider {
+  margin-top:46px;
+  padding-top: 50%;
+  background-image: url('/assets/img/slider1.jpg') ;
+  background-repeat: no-repeat;
+  background-position: top center;
+  background-size: cover;
+  position: relative;
+  
+}
+#slider .slider1{
+  position: absolute;
+  bottom: 47px;
+  color: white;
+  text-align: center;
+  width: 100%;
+  
+
+}
+.slider1 h2{
+  font-weight: 100;
+  font-size: 24px;
+}
+.slider1 h3{
+  font-size: 15px;
+  padding-top: 25px;
+}
+ 
+
+
+#content .content-section {
+    max-width: 800px;
+    margin-right: auto;
+    margin-left: auto;
+    padding: 64px 0px;
+
+}
+
+#content .section-heading{
+  text-align: center;
+  font-size: 30px;
+  letter-spacing: 4px;
+  margin: 10px 0;
+}
+
+#content .section-subheading{
+  text-align: center;
+  margin-top: 25px;
+  opacity: 0.6 ;
+  font-style: italic;
+}
+
+.content-section .about{
+  margin-top: 25px;
+  line-height: 1.4;
+  text-align: justify;
+  font-size: 15px;
+}
+.member-section{
+  margin-top: 48px;
+ 
+}
+
+.member-i4{
+  float: left;
+  text-align: center;
+  width: calc(100%/3);
+
+}
+
+.member-name{
+  font-size: 15px;
+}
+
+.member-img{
+  margin-top: 15px;
+  width: 154px;
+  border-radius: 4px;
+}
+
+
+
+
+#footer {
+  height: 500px;
+  background-color: #f33446;
+
+}
